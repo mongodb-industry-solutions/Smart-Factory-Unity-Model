@@ -27,7 +27,7 @@ public class StopFactory : MonoBehaviour
 
         if (StopButton != null)
             {
-             var allCommands =  realm.All<Command>();
+             var allCommands =  realm.All<command>();
              Debug.Log("Commands count is: " + allCommands.AsQueryable().Count().ToString());
 
             // foreach (var command in allCommands)

@@ -34,9 +34,9 @@ public class StartFactory : MonoBehaviour
             {
                 realm.Write(() =>
                 {
-                    realm.Add(new Command()
+                    realm.Add(new command()
                     {
-                        Value = 1
+                        Command = "stop"
                     });
                 });
             }
