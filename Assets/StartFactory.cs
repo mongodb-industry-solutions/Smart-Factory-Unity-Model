@@ -26,10 +26,13 @@ public class StartFactory : MonoBehaviour
 
     public GameObject StartButton;
     
+    public Animator myWhiteAnimator;
 
     public void OnStartButtonClick(){
-        /*
         realm = GetRealm();
+        
+       
+      myWhiteAnimator.SetTrigger("start_white");
 
         if (StartButton != null)
             {
@@ -41,7 +44,6 @@ public class StartFactory : MonoBehaviour
                     });
                 });
             }
-            */
     }
 
 

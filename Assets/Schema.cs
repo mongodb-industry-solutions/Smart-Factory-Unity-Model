@@ -8,19 +8,20 @@ using MongoDB.Bson;
 
 
 
+
 public class command : RealmObject
 {
     [MapTo("_id")]
     [PrimaryKey]
     public ObjectId? Id { get; set; }
+
     [MapTo("command")]
     public string Command { get; set; }
+
     [MapTo("ts")]
     public DateTimeOffset? Ts { get; set; }
-    [MapTo("userId")]
-    [Required]
-    public string UserId { get; set; }
 }
+
 
 public class order : RealmObject
 {
@@ -50,8 +51,5 @@ public class order : RealmObject
     public DateTimeOffset? TimeStamp { get; set; }
 
     [MapTo("userId")]
-    [Required]
     public string UserId { get; set; }
 }
-
-
