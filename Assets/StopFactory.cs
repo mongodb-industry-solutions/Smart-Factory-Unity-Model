@@ -24,6 +24,8 @@ public class StopFactory : MonoBehaviour
     }
         public void OnStopButtonClick(){
         realm = GetRealm();
+        
+        
 
         if (StopButton != null)
             {
