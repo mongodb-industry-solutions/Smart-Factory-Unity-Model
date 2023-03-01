@@ -28,6 +28,7 @@ public class StartFactory : MonoBehaviour
     
 
     public void OnStartButtonClick(){
+        /*
         realm = GetRealm();
 
         if (StartButton != null)
@@ -40,6 +41,7 @@ public class StartFactory : MonoBehaviour
                     });
                 });
             }
+            */
     }
 
 
