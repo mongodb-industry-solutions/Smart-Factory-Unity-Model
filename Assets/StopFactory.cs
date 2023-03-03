@@ -8,7 +8,7 @@ using System.Linq;
 public class StopFactory : MonoBehaviour
 {
     private static Realm realm;
-    private static App realmApp = App.Create("unityapp-wdmdj"); 
+   // private static App realmApp = App.Create("unityapp-wdmdj"); 
     public GameObject StopButton;
 
     // Start is called before the first frame update
@@ -23,14 +23,14 @@ public class StopFactory : MonoBehaviour
         
     }
         public void OnStopButtonClick(){
-        realm = GetRealm();
+        //realm = GetRealm();
         
         
 
         if (StopButton != null)
             {
-             var allCommands =  realm.All<command>();
-             Debug.Log("Commands count is: " + allCommands.AsQueryable().Count().ToString());
+            // var allCommands =  realm.All<command>();
+            // Debug.Log("Commands count is: " + allCommands.AsQueryable().Count().ToString());
 
             // foreach (var command in allCommands)
               //   {

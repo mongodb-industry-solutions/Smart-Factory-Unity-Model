@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 177826210}
   - component: {fileID: 177826209}
   - component: {fileID: 177826208}
-  - component: {fileID: 177826207}
+  - component: {fileID: 177826211}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -541,20 +541,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.57}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &177826207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177826205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe78609d4532b4698ad3fd942f9060d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartButton: {fileID: 199368282}
-  myWhiteAnimator: {fileID: 963097488}
 --- !u!114 &177826208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,9 +585,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 177826207}
-        m_TargetAssemblyTypeName: StartFactory, Assembly-CSharp
-        m_MethodName: OnStartButtonClick
+      - m_Target: {fileID: 177826211}
+        m_TargetAssemblyTypeName: Order, Assembly-CSharp
+        m_MethodName: OnWhiteButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -649,6 +635,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177826205}
   m_CullTransparentMesh: 1
+--- !u!114 &177826211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177826205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueButton: {fileID: 0}
+  RedButton: {fileID: 0}
+  WhiteButton: {fileID: 177826205}
+  myWhiteAnimator: {fileID: 963097488}
 --- !u!1 &199368282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,7 +1397,7 @@ GameObject:
   - component: {fileID: 1352601976}
   - component: {fileID: 1352601975}
   - component: {fileID: 1352601974}
-  - component: {fileID: 1352601973}
+  - component: {fileID: 1352601977}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1424,20 +1426,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.57}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1352601973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352601971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe78609d4532b4698ad3fd942f9060d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartButton: {fileID: 1306798980}
-  myWhiteAnimator: {fileID: 0}
 --- !u!114 &1352601974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,9 +1470,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1352601973}
-        m_TargetAssemblyTypeName: StartFactory, Assembly-CSharp
-        m_MethodName: OnStartButtonClick
+      - m_Target: {fileID: 1352601977}
+        m_TargetAssemblyTypeName: Order, Assembly-CSharp
+        m_MethodName: OnBlueButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1532,6 +1520,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352601971}
   m_CullTransparentMesh: 1
+--- !u!114 &1352601977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352601971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueButton: {fileID: 1352601971}
+  RedButton: {fileID: 0}
+  WhiteButton: {fileID: 0}
+  myWhiteAnimator: {fileID: 0}
 --- !u!1 &1752482399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1862,7 @@ GameObject:
   - component: {fileID: 1998507165}
   - component: {fileID: 1998507164}
   - component: {fileID: 1998507163}
-  - component: {fileID: 1998507162}
+  - component: {fileID: 1998507166}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1887,20 +1891,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.57}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1998507162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998507160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe78609d4532b4698ad3fd942f9060d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartButton: {fileID: 1103111986}
-  myWhiteAnimator: {fileID: 0}
 --- !u!114 &1998507163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,9 +1935,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1998507162}
-        m_TargetAssemblyTypeName: StartFactory, Assembly-CSharp
-        m_MethodName: OnStartButtonClick
+      - m_Target: {fileID: 1998507166}
+        m_TargetAssemblyTypeName: Order, Assembly-CSharp
+        m_MethodName: OnRedButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1995,6 +1985,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998507160}
   m_CullTransparentMesh: 1
+--- !u!114 &1998507166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998507160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlueButton: {fileID: 0}
+  RedButton: {fileID: 1998507160}
+  WhiteButton: {fileID: 0}
+  myWhiteAnimator: {fileID: 0}
 --- !u!4 &543450653222438847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2399580139359103834, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
@@ -2134,6 +2140,18 @@ PrefabInstance:
     - target: {fileID: 3929323265532253951, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986866502496556280, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3215
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986866502496556280, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5771
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986866502496556280, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6127
       objectReference: {fileID: 0}
     - target: {fileID: 5250445726710266707, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
       propertyPath: m_LocalRotation.w

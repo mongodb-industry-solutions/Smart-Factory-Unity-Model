@@ -33,7 +33,7 @@ public class StartFactory : MonoBehaviour
         
        
       myWhiteAnimator.SetTrigger("start_white");
-
+        /*
         if (StartButton != null)
             {
                 realm.Write(() =>
@@ -44,6 +44,7 @@ public class StartFactory : MonoBehaviour
                     });
                 });
             }
+            */
     }
 
 
