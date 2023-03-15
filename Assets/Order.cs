@@ -76,6 +76,7 @@ public class Order : MonoBehaviour
 
         public  async void OnWhiteButtonClick(){
         //realm = GetRealm();
+            Debug.Log("test started");
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
                 realm.Write(() =>
@@ -95,6 +96,7 @@ public class Order : MonoBehaviour
                 });
 
                 //animator code
+                Debug.Log("test completed");
                 myWhiteAnimator.SetTrigger("start_white");
 
     }
