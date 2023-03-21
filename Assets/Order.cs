@@ -14,7 +14,12 @@ public class Order : MonoBehaviour
 
     private static Realm realm;
     private static App realmApp = App.Create(Constants.Realm.AppId); 
-     public static User syncUser;
+    public static User syncUser;
+    private IDisposable listenerToken;
+    public  Animator myWhiteAnimator;
+    public  Animator myRedAnimator;
+    public  Animator myBlueAnimator;
+
      
 
     // Start is called before the first frame update
@@ -31,15 +36,15 @@ public class Order : MonoBehaviour
     public  GameObject BlueButton;
     public  GameObject RedButton;
     public  GameObject WhiteButton;
-    public  Animator myWhiteAnimator;
 
 
     public async void OnBlueButtonClick(){
+                Debug.Log(Constants.Realm.flag);
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
                 realm.Write(() =>
                 {
-                    realm.Add(new neworder()
+                    realm.Add(new digital_twin_orders()
                     {
                         Id = ObjectId.GenerateNewId(),
                         ShipFrom="North York",
@@ -52,14 +57,21 @@ public class Order : MonoBehaviour
                         TimeStamp = DateTimeOffset.Now
                     });
                 });
+                
+                SetMovementListener(realm);
+                if (Constants.Realm.flag == false){
+                    Constants.Realm.flag = true;
+                  //  SetMovementListener(realm);
+                }
     }
 
     public  async void OnRedButtonClick(){
+                Debug.Log(Constants.Realm.flag);
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
                 realm.Write(() =>
                 {
-                    realm.Add(new neworder()
+                    realm.Add(new digital_twin_orders()
                     {
                         Id = ObjectId.GenerateNewId(),
                         ShipFrom="North York",
@@ -72,16 +84,21 @@ public class Order : MonoBehaviour
                         TimeStamp = DateTimeOffset.Now
                     });
                 });
+                SetMovementListener(realm);
+
+                if (Constants.Realm.flag == false){
+                    Constants.Realm.flag = true;
+                   // SetMovementListener(realm);
+                }
     }
 
         public  async void OnWhiteButtonClick(){
-        //realm = GetRealm();
-            Debug.Log("test started");
+                Debug.Log(Constants.Realm.flag);
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
                 realm.Write(() =>
                 {
-                    realm.Add(new neworder()
+                    realm.Add(new digital_twin_orders()
                     {
                         Id = ObjectId.GenerateNewId(),
                         ShipFrom="North York",
@@ -94,10 +111,12 @@ public class Order : MonoBehaviour
                         TimeStamp = DateTimeOffset.Now
                     });
                 });
+                SetMovementListener(realm);
 
-                //animator code
-                Debug.Log("test completed");
-                myWhiteAnimator.SetTrigger("start_white");
+                if (Constants.Realm.flag == false){
+                    Constants.Realm.flag = true;
+                   // SetMovementListener(realm);
+                }
 
     }
 
@@ -107,11 +126,11 @@ public class Order : MonoBehaviour
         return Realm.GetInstance();
 
     }
-*/
+    */
 
     private static async Task<Realm> GetRealm(User loggedInUser)
     {
-       var syncConfiguration = new PartitionSyncConfiguration("DT", loggedInUser);
+       var syncConfiguration = new PartitionSyncConfiguration("DTPartition", loggedInUser);
        return await Realm.GetInstanceAsync(syncConfiguration);
 
         //Flexible Sync code
@@ -128,6 +147,55 @@ public class Order : MonoBehaviour
 
 
     }
+
+
+
+    private void StartAnimations(int[] insertedIndices, Realm realm)
+{
+     Debug.Log("inside Start Animations");
+     Debug.Log(insertedIndices.Length);
+    foreach (var i in insertedIndices)
+    {
+        var newMessage = realm.All<mqtt>().ElementAt(i);
+        Debug.Log(newMessage.Topic);
+
+        if(newMessage.State=="ORDERED" && newMessage.Type=="WHITE" && newMessage.Topic=="f/i/order"){
+            myWhiteAnimator.SetTrigger("start_white");
+            Debug.Log("start white animation");
+        }
+
+        else if (newMessage.State=="ORDERED" && newMessage.Type=="RED" && newMessage.Topic=="f/i/order"){
+            myRedAnimator.SetTrigger("start_red");
+            Debug.Log("start red animation");
+        }
+
+        else if (newMessage.State=="ORDERED" && newMessage.Type=="BLUE" && newMessage.Topic=="f/i/order"){
+            Debug.Log("start blue animation");
+        }
+
+     
+    }
+}
+
+    public void SetMovementListener(Realm realm)
+    {
+      listenerToken = realm.All<mqtt>()
+        .SubscribeForNotifications((sender, changes, error) =>
+        {
+            if (error != null)
+            {
+                Debug.Log("an error occurred while listening for messages :" + error);
+                return;
+            }
+
+            if (changes != null)
+            {
+
+                StartAnimations(changes.InsertedIndices,realm);
+            }
+
+        });
+        }
 
 
 }

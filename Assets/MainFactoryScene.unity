@@ -647,10 +647,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flag: 0
+  myWhiteAnimator: {fileID: 963097488}
+  myRedAnimator: {fileID: 963097488}
+  myBlueAnimator: {fileID: 963097488}
   BlueButton: {fileID: 0}
   RedButton: {fileID: 0}
   WhiteButton: {fileID: 177826205}
-  myWhiteAnimator: {fileID: 963097488}
 --- !u!1 &199368282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,10 +1535,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flag: 0
+  myWhiteAnimator: {fileID: 963097488}
+  myRedAnimator: {fileID: 963097488}
+  myBlueAnimator: {fileID: 963097488}
   BlueButton: {fileID: 1352601971}
   RedButton: {fileID: 0}
   WhiteButton: {fileID: 0}
-  myWhiteAnimator: {fileID: 0}
 --- !u!1 &1752482399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,10 +2003,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flag: 0
+  myWhiteAnimator: {fileID: 963097488}
+  myRedAnimator: {fileID: 963097488}
+  myBlueAnimator: {fileID: 963097488}
   BlueButton: {fileID: 0}
   RedButton: {fileID: 1998507160}
   WhiteButton: {fileID: 0}
-  myWhiteAnimator: {fileID: 0}
 --- !u!4 &543450653222438847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2399580139359103834, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}
