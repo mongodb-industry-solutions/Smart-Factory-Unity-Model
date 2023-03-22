@@ -170,6 +170,7 @@ public class Order : MonoBehaviour
         }
 
         else if (newMessage.State=="ORDERED" && newMessage.Type=="BLUE" && newMessage.Topic=="f/i/order"){
+            myBlueAnimator.SetTrigger("start_blue");
             Debug.Log("start blue animation");
         }
 
