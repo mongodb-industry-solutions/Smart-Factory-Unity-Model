@@ -25,40 +25,62 @@ public class Order : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public  GameObject BlueButton;
     public  GameObject RedButton;
     public  GameObject WhiteButton;
+    public  GameObject StockAlert;
+
 
 
     public async void OnBlueButtonClick(){
-                Debug.Log(Constants.Realm.flag);
+                // Debug.Log(Constants.Realm.flag);
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
-                realm.Write(() =>
-                {
-                    realm.Add(new digital_twin_orders()
-                    {
-                        Id = ObjectId.GenerateNewId(),
-                        ShipFrom="North York",
-                        ShipTo="Toronto",
-                        Color = "blue",
-                        UserId ="DT",
-                        FirstName="H",
-                        LastName="A",
-                        OrderStatus="Order Submitted",
-                        TimeStamp = DateTimeOffset.Now
-                    });
-                });
+
+                var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9");
                 
-                SetMovementListener(realm);
+                var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+
+                if (stock_inference_doc.IsPresent.Blue == false) 
+                {
+                    Debug.Log("The Physical factory doesn't have a Blue piece in Stock!");
+                    StockAlert.SetActive(true);
+                } 
+                else 
+                {
+                    Debug.Log("We have a Blue in stock, starting production!");
+                    realm.Write(() =>
+                    {
+                        realm.Add(new digital_twin_orders()
+                        {
+                            Id = ObjectId.GenerateNewId(),
+                            ShipFrom="North York",
+                            ShipTo="Barcelona",
+                            Color = "blue",
+                            UserId ="DT",
+                            FirstName="H",
+                            LastName="A",
+                            Partition="DTPartition",
+                            OrderStatus="Order Submitted",
+                            TimeStamp = DateTimeOffset.Now
+                        });
+                    });
+
+                    SetMovementListener(realm);
+                    myBlueAnimator.SetTrigger("start_blue");
+                    Debug.Log("start blue animation");
+                    
+                }
+                
                 if (Constants.Realm.flag == false){
                     Constants.Realm.flag = true;
                   //  SetMovementListener(realm);
@@ -66,25 +88,42 @@ public class Order : MonoBehaviour
     }
 
     public  async void OnRedButtonClick(){
-                Debug.Log(Constants.Realm.flag);
+                // Debug.Log(Constants.Realm.flag);
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
-                realm.Write(() =>
+                
+                var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9");
+                var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+
+                if (stock_inference_doc.IsPresent.Red == false) 
                 {
-                    realm.Add(new digital_twin_orders()
+                    Debug.Log("The Physical factory doesn't have a Red piece in Stock!");
+                    StockAlert.SetActive(true);
+                } 
+                else 
+                {
+                    Debug.Log("We have a Red in stock, starting production!");
+                    realm.Write(() =>
                     {
-                        Id = ObjectId.GenerateNewId(),
-                        ShipFrom="North York",
-                        ShipTo="Toronto",
-                        Color = "red",
-                        UserId ="DT",
-                        FirstName="H",
-                        LastName="A",
-                        OrderStatus="Order Submitted",
-                        TimeStamp = DateTimeOffset.Now
+                        realm.Add(new digital_twin_orders()
+                        {
+                            Id = ObjectId.GenerateNewId(),
+                            ShipFrom="North York",
+                            ShipTo="Barcelona",
+                            Color = "red",
+                            UserId ="DT",
+                            FirstName="H",
+                            LastName="A",
+                            Partition="DTPartition",
+                            OrderStatus="Order Submitted",
+                            TimeStamp = DateTimeOffset.Now
+                        });
                     });
-                });
-                SetMovementListener(realm);
+
+                    SetMovementListener(realm);
+                    myRedAnimator.SetTrigger("start_red");
+                    Debug.Log("start red animation");
+                }
 
                 if (Constants.Realm.flag == false){
                     Constants.Realm.flag = true;
@@ -93,26 +132,53 @@ public class Order : MonoBehaviour
     }
 
         public  async void OnWhiteButtonClick(){
-                Debug.Log(Constants.Realm.flag);
+
+                // Debug.Log(Constants.Realm.flag);
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
-                realm.Write(() =>
-                {
-                    realm.Add(new digital_twin_orders()
-                    {
-                        Id = ObjectId.GenerateNewId(),
-                        ShipFrom="North York",
-                        ShipTo="Toronto",
-                        Color = "white",
-                        UserId ="DT",
-                        FirstName="H",
-                        LastName="A",
-                        OrderStatus="Order Submitted",
-                        TimeStamp = DateTimeOffset.Now
-                    });
-                });
-                SetMovementListener(realm);
 
+                //// Change the .find to get all documents in the collection and iterate to get the first one
+                var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9"); 
+                var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+
+                Debug.Log(stock_inference_doc);
+                Debug.Log(stock_inference_doc.IsPresent);
+
+                if (stock_inference_doc.IsPresent.White == false) 
+                {
+                    Debug.Log("The Physical factory doesn't have a White piece in Stock!");
+                    StockAlert.SetActive(true);
+                } 
+                else 
+                {
+                    
+                    Debug.Log("We have a White in stock, starting production!");
+                    realm.Write(() =>
+                    {
+                        realm.Add(new digital_twin_orders()
+                        {
+                            Id = ObjectId.GenerateNewId(),
+                            ShipFrom="North York",
+                            ShipTo="Barcelona",
+                            Color = "white",
+                            UserId ="DT",
+                            FirstName="H",
+                            LastName="A",
+                            Partition="DTPartition",
+                            OrderStatus="Order Submitted",
+                            TimeStamp = DateTimeOffset.Now
+                        });
+                    });
+
+                    SetMovementListener(realm);
+                    myWhiteAnimator.SetTrigger("start_white");
+                    Debug.Log("start white animation");
+                }
+
+                // SetStockListener(realm);
+                
+
+            
                 if (Constants.Realm.flag == false){
                     Constants.Realm.flag = true;
                    // SetMovementListener(realm);
@@ -120,13 +186,6 @@ public class Order : MonoBehaviour
 
     }
 
-    // GetRealm() returns a realm instance
-   /* private static Realm GetRealm()
-    {
-        return Realm.GetInstance();
-
-    }
-    */
 
     private static async Task<Realm> GetRealm(User loggedInUser)
     {
@@ -178,8 +237,9 @@ public class Order : MonoBehaviour
     }
 }
 
-    public void SetMovementListener(Realm realm)
+    public void  SetMovementListener(Realm realm)
     {
+      Debug.Log("Set movement listener");
       listenerToken = realm.All<mqtt>()
         .SubscribeForNotifications((sender, changes, error) =>
         {
@@ -191,7 +251,7 @@ public class Order : MonoBehaviour
 
             if (changes != null)
             {
-
+                Debug.Log("Animation set to start");
                 StartAnimations(changes.InsertedIndices,realm);
             }
 
