@@ -654,6 +654,7 @@ MonoBehaviour:
   RedButton: {fileID: 0}
   WhiteButton: {fileID: 177826205}
   StockAlert: {fileID: 1703431533}
+  StockAlertText: {fileID: 364826916}
 --- !u!1 &199368282
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,8 +811,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 189.9047, y: 55.9654}
+  m_AnchoredPosition: {x: 0, y: 1.33}
+  m_SizeDelta: {x: 190.06, y: 56.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &364826916
 MonoBehaviour:
@@ -833,7 +834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The piece you are requesting is not in stock! '
+  m_text: 'The piece you are requesting is out of stock! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -860,8 +861,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.5
-  m_fontSizeBase: 1.5
+  m_fontSize: 2
+  m_fontSizeBase: 2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1426,7 +1427,7 @@ RectTransform:
   m_GameObject: {fileID: 1307774145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1854877280}
@@ -1435,8 +1436,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.33}
-  m_SizeDelta: {x: 10, y: 3.646}
+  m_AnchoredPosition: {x: 0, y: -2.84}
+  m_SizeDelta: {x: 150, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1307774147
 MonoBehaviour:
@@ -1686,6 +1687,7 @@ MonoBehaviour:
   RedButton: {fileID: 0}
   WhiteButton: {fileID: 0}
   StockAlert: {fileID: 1703431533}
+  StockAlertText: {fileID: 364826916}
 --- !u!1 &1703431533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,13 +1961,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2020,6 +2022,8 @@ GameObject:
   - component: {fileID: 1855005893}
   - component: {fileID: 1855005892}
   - component: {fileID: 1855005891}
+  - component: {fileID: 1855005894}
+  - component: {fileID: 1855005895}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2091,6 +2095,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 31.6}
   m_SizeDelta: {x: 946.00006, y: 518}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1855005894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855005890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!114 &1855005895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855005890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c082b66b16e174eff99297943567de1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myWhiteAnimator: {fileID: 0}
+  myRedAnimator: {fileID: 0}
+  myBlueAnimator: {fileID: 0}
+  BlueButton: {fileID: 0}
+  RedButton: {fileID: 0}
+  WhiteButton: {fileID: 0}
+  StockAlert: {fileID: 0}
+  StockAlertText: {fileID: 364826916}
 --- !u!1 &1874070153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,7 +2272,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 7}
+  m_SizeDelta: {x: 50, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927440570
 MonoBehaviour:
@@ -2418,6 +2465,7 @@ MonoBehaviour:
   RedButton: {fileID: 1998507160}
   WhiteButton: {fileID: 0}
   StockAlert: {fileID: 1703431533}
+  StockAlertText: {fileID: 364826916}
 --- !u!4 &543450653222438847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2399580139359103834, guid: 1685f34cd3b494fc394ddd9123887b1d, type: 3}

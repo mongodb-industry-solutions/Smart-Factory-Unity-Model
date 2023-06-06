@@ -7,6 +7,7 @@ using UnityEngine;
 using Realms;
 using Realms.Sync;
 using MongoDB.Bson;
+using TMPro;
 
 
 public class Order : MonoBehaviour
@@ -38,6 +39,7 @@ public class Order : MonoBehaviour
     public  GameObject RedButton;
     public  GameObject WhiteButton;
     public  GameObject StockAlert;
+    public  TextMeshProUGUI StockAlertText;
 
 
 
@@ -46,14 +48,18 @@ public class Order : MonoBehaviour
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
 
-                var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9");
+                // var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9");
                 
-                var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+                // var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+                var stock_inference_doc = realm.All<sagemaker_stock_inference>().ElementAt(0);
 
                 if (stock_inference_doc.IsPresent.Blue == false) 
                 {
                     Debug.Log("The Physical factory doesn't have a Blue piece in Stock!");
+                    StockAlertText.text = "The blue piece you are requesting is out of stock in the Physical Factory!";
                     StockAlert.SetActive(true);
+                    
+                    
                 } 
                 else 
                 {
@@ -92,13 +98,17 @@ public class Order : MonoBehaviour
                 syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
                 realm = await GetRealm(syncUser);
                 
-                var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9");
-                var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+                // var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9");
+                // var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+                var stock_inference_doc = realm.All<sagemaker_stock_inference>().ElementAt(0);
 
                 if (stock_inference_doc.IsPresent.Red == false) 
                 {
                     Debug.Log("The Physical factory doesn't have a Red piece in Stock!");
+                    StockAlertText.text = "The red piece you are requesting is out of stock in the Physical Factory!";
                     StockAlert.SetActive(true);
+                    
+                    
                 } 
                 else 
                 {
@@ -138,8 +148,9 @@ public class Order : MonoBehaviour
                 realm = await GetRealm(syncUser);
 
                 //// Change the .find to get all documents in the collection and iterate to get the first one
-                var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9"); 
-                var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+                // var stockInferenceId = new ObjectId("6464c8fe29e99ce415176ba9"); 
+                // var stock_inference_doc = realm.Find<sagemaker_stock_inference>(stockInferenceId);
+                var stock_inference_doc = realm.All<sagemaker_stock_inference>().ElementAt(0);
 
                 Debug.Log(stock_inference_doc);
                 Debug.Log(stock_inference_doc.IsPresent);
@@ -147,7 +158,10 @@ public class Order : MonoBehaviour
                 if (stock_inference_doc.IsPresent.White == false) 
                 {
                     Debug.Log("The Physical factory doesn't have a White piece in Stock!");
+                    StockAlertText.text = "The white piece you are requesting is out of stock in the Physical Factory!";
                     StockAlert.SetActive(true);
+                    
+                    
                 } 
                 else 
                 {
