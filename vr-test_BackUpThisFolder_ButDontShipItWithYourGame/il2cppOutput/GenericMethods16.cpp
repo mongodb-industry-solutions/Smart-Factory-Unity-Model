@@ -159,6 +159,14 @@ struct Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00;
 struct Func_2_tACBF5A1656250800CE861707354491F0611F6624;
 // System.Func`2<Realms.Exceptions.RealmExceptionCodes,System.Exception>
 struct Func_2_tC0B5A8B8ACB4CA489E4C9670644DE3B6E244A9EF;
+// System.Func`3<System.String,Realms.Metadata,System.Object>
+struct Func_3_tE7742BF7958D01B6649716E6978A1D4E6DA23400;
+// System.Func`4<System.String,Realms.Metadata,Realms.Realm,System.Object>
+struct Func_4_t531539144631BC4FFD0F6FC61DBB8E347E23AE0C;
+// System.Func`4<System.String,Realms.Metadata,Realms.Realm,Realms.RealmValue>
+struct Func_4_t9B149B580161402F390952EE4C4750DE3D48E745;
+// System.Func`5<Realms.Realm,System.String,Realms.Metadata,System.String,System.Object>
+struct Func_5_tAAF797D039D7F67FE8D6153CB81FD86414B84B15;
 // System.Collections.Generic.ICollection`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct ICollection_1_t1577F0DDE3B34F1E97BB144908224A716AE1C2A1;
 // System.Collections.Generic.ICollection`1<System.Object>
@@ -619,6 +627,8 @@ struct Metadata_t2ABF6F2F8F0B9781B531167A5D3DF6AD8C903175;
 struct MethodInfo_t;
 // Remotion.Linq.Clauses.ResultOperators.MinResultOperator
 struct MinResultOperator_tDFA7329532959EF310E37A0C146FBABCFA168E9B;
+// System.NotSupportedException
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 // Realms.NotificationTokenHandle
 struct NotificationTokenHandle_t16592F9586631C974992BB8904D958DC955FA02C;
 // System.Collections.Specialized.NotifyCollectionChangedEventHandler
@@ -708,6 +718,7 @@ IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_i
 IL2CPP_EXTERN_C RuntimeClass* ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CollectionType_tCA295DCEB91350BE48FDAD5EAFB87EF08A01B774_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DictionaryHandle_t1DB97042D0D2941140749C00571BD5BEC1659E2C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ForDeviceEventObservable_t8A72659C906D6280192E680AF251425A67A7D889_il2cpp_TypeInfo_var;
@@ -725,6 +736,8 @@ IL2CPP_EXTERN_C RuntimeClass* InputSystem_t4120CA4FE7DCFD56AF9391933FC3F1F485350
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InvalidCastException_t47FC62F21A3937E814D20381DDACEF240E95AC2E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ListHandle_t23B0DD0F2D01BBC5EF0162E9C171A490BBB5D4BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* OfTypeResultOperator_t9FCAE22B09DF7035BF276C991BDC1313EC261E3F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Operator_tBDCE1D2267D2A19781266BC2C67B483F40F0DADA_il2cpp_TypeInfo_var;
@@ -742,6 +755,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral07624473F417C06C74D59C64840A1532FCE2C626
 IL2CPP_EXTERN_C String_t* _stringLiteral1426EAC460EF593AB4BA506E82CCB1FF95390521;
 IL2CPP_EXTERN_C String_t* _stringLiteral1C09770F25C8580FC7F6623067ACD12EBA570614;
 IL2CPP_EXTERN_C String_t* _stringLiteral213ABAA76E922BC10339BAF6AC97E9B778E7774F;
+IL2CPP_EXTERN_C String_t* _stringLiteral2FB4D8068DB89A563A3B021E5835C02C4EACF4A7;
 IL2CPP_EXTERN_C String_t* _stringLiteral3F0DDED65DF0E4BCF3C79CDD7CAC3105F6B1EB1E;
 IL2CPP_EXTERN_C String_t* _stringLiteral430EB2E3A25FA4E421F6F9352AA45F5613EEBE3C;
 IL2CPP_EXTERN_C String_t* _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8;
@@ -765,6 +779,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m4E186A9A5675BFA7E92BF5C08FDD6BC6F034A11B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m76A83B76330D385CC22ECE544729CDD0FCEAFECC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mF58794633948FE8284FCDACC4456686548388092_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* MetaRealmObject_U3CGetObjectGetCollectionMethodU3Eg__GetCollectionGetterU7C22_0_TisRuntimeObject_mE3F027791BAF6E15A7B9824C631AB3C293AEEE9C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeSliceUnsafeUtility_ConvertExistingDataToNativeSlice_TisDrawBufferRange_t684F255F5C954760B12F6689F84E78811040C7A4_m0E13A9B9EB1528AEFCB77F8C8B2C7CDE0C88189A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NoAllocHelpers_ResizeList_TisRuntimeObject_m581E7D01B4CC8646112C1B8E69A6309958AD548D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NoAllocHelpers_ResizeList_TisVector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_m406897EC401DF0D9344740E0C42E27A523E0C4B7_RuntimeMethod_var;
@@ -5698,6 +5713,36 @@ struct Func_2_tC0B5A8B8ACB4CA489E4C9670644DE3B6E244A9EF  : public MulticastDeleg
 {
 };
 
+// System.Func`3<System.String,Realms.Metadata,System.Object>
+struct Func_3_tE7742BF7958D01B6649716E6978A1D4E6DA23400  : public MulticastDelegate_t
+{
+};
+
+// System.Func`4<System.String,Realms.Metadata,Realms.Realm,System.Object>
+struct Func_4_t531539144631BC4FFD0F6FC61DBB8E347E23AE0C  : public MulticastDelegate_t
+{
+};
+
+// System.Func`5<Realms.Realm,System.String,Realms.Metadata,System.String,Realms.RealmDictionary`1<System.Object>>
+struct Func_5_tF3D953E7C8F61CD253A236F267F00CD23F183F7C  : public MulticastDelegate_t
+{
+};
+
+// System.Func`5<Realms.Realm,System.String,Realms.Metadata,System.String,Realms.RealmList`1<System.Object>>
+struct Func_5_t9907358301CADBADC2C29AAD582CC20789A15247  : public MulticastDelegate_t
+{
+};
+
+// System.Func`5<Realms.Realm,System.String,Realms.Metadata,System.String,Realms.RealmSet`1<System.Object>>
+struct Func_5_t214E734353760014C852360B18336EB86E55726E  : public MulticastDelegate_t
+{
+};
+
+// System.Func`5<Realms.Realm,System.String,Realms.Metadata,System.String,System.Object>
+struct Func_5_tAAF797D039D7F67FE8D6153CB81FD86414B84B15  : public MulticastDelegate_t
+{
+};
+
 // UnityEngine.InputSystem.InputControl`1<System.Single>
 struct InputControl_1_t7A35A4AF63A7AA94678E000D4F3265A1FD84288A  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
 {
@@ -5781,6 +5826,11 @@ struct InvalidCastException_t47FC62F21A3937E814D20381DDACEF240E95AC2E  : public 
 {
 };
 
+// System.NotSupportedException
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+
 // Realms.NotifiableObjectHandleBase
 struct NotifiableObjectHandleBase_t26397CE5A05716B9E856BB83548D38B85E2A63C3  : public RealmHandle_tCC2CFE12D1A1E9FDFF7072761A32D8E350497D9A
 {
@@ -5842,6 +5892,11 @@ struct SharedRealmHandle_tC1305DD949EA86491B9BE3C1626D3EB480A8DEAA  : public Sta
 
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
+// System.Func`4<System.String,Realms.Metadata,Realms.Realm,Realms.RealmValue>
+struct Func_4_t9B149B580161402F390952EE4C4750DE3D48E745  : public MulticastDelegate_t
 {
 };
 
@@ -6044,6 +6099,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeSlice_1__ctor_mC87483602F891B11DD0
 // System.Void System.ValueTuple`2<System.Object,System.Object>::.ctor(T1,T2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m4D25F4A0A0085EBE6559B6CC932AA5E267DB554D_gshared (ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A* __this, RuntimeObject* ___item10, RuntimeObject* ___item21, const RuntimeMethod* method) ;
 
+// System.String System.String::Format(System.String,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
+// System.Void System.NotSupportedException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, String_t* ___message0, const RuntimeMethod* method) ;
 // System.Reflection.MethodInfo System.Reflection.RuntimeReflectionExtensions::GetMethodInfo(System.Delegate)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* RuntimeReflectionExtensions_GetMethodInfo_mCC5A270DD1E9164C1BA414F6E1C583E08246224C (Delegate_t* ___del0, const RuntimeMethod* method) ;
 // Remotion.Linq.Clauses.StreamedData.StreamedSequenceInfo Remotion.Linq.Clauses.StreamedData.StreamedSequence::get_DataInfo()
@@ -6111,8 +6170,6 @@ inline void NativeSlice_1__ctor_mC87483602F891B11DD01B19DAF427E8D61C385C6 (Nativ
 {
 	((  void (*) (NativeSlice_1_t66375568C4FF313931F4D2F646D64FE6A406BAD2*, NativeSlice_1_t66375568C4FF313931F4D2F646D64FE6A406BAD2, int32_t, int32_t, const RuntimeMethod*))NativeSlice_1__ctor_mC87483602F891B11DD01B19DAF427E8D61C385C6_gshared)(__this, ___slice0, ___start1, ___length2, method);
 }
-// System.String System.String::Format(System.String,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, String_t* ___paramName1, const RuntimeMethod* method) ;
 // System.Array UnityEngine.NoAllocHelpers::ExtractArrayFromList(System.Object)
@@ -6202,6 +6259,146 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Convert_ChangeType_m13EF3B0690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
 // Realms.RealmValue Realms.RealmValue::Object(Realms.IRealmObjectBase)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3 RealmValue_Object_mA1E670BECDF1DAA6BCC67C803D5A76C492D58602 (RuntimeObject* ___value0, const RuntimeMethod* method) ;
+// System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::<GetObjectGetCollectionMethod>g__GetCollectionGetter|22_0<System.Object>(Realms.Dynamic.MetaRealmObject/CollectionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_U3CGetObjectGetCollectionMethodU3Eg__GetCollectionGetterU7C22_0_TisRuntimeObject_mE3F027791BAF6E15A7B9824C631AB3C293AEEE9C_gshared (int32_t ___collectionType0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MethodInfo_t* V_0 = NULL;
+	{
+		int32_t L_0 = ___collectionType0;
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_0014;
+			}
+			case 1:
+			{
+				goto IL_002c;
+			}
+			case 2:
+			{
+				goto IL_0044;
+			}
+		}
+	}
+	{
+		goto IL_005c;
+	}
+
+IL_0014:
+	{
+		il2cpp_codegen_runtime_class_init_inline(MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var);
+		ObjectHandle_tB51DDB8EF3C73703B266D95396BFCD2A68A84793* L_1 = ((MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_StaticFields*)il2cpp_codegen_static_fields_for(MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var))->___DummyHandle_17;
+		Func_5_t9907358301CADBADC2C29AAD582CC20789A15247* L_2 = (Func_5_t9907358301CADBADC2C29AAD582CC20789A15247*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 1));
+		NullCheck(L_2);
+		((  void (*) (Func_5_t9907358301CADBADC2C29AAD582CC20789A15247*, RuntimeObject*, intptr_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 2)))(L_2, (RuntimeObject*)L_1, (intptr_t)((void*)il2cpp_rgctx_method(method->rgctx_data, 0)), il2cpp_rgctx_method(method->rgctx_data, 2));
+		MethodInfo_t* L_3;
+		L_3 = ((  MethodInfo_t* (*) (Func_5_t9907358301CADBADC2C29AAD582CC20789A15247*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))(L_2, il2cpp_rgctx_method(method->rgctx_data, 3));
+		V_0 = L_3;
+		goto IL_0072;
+	}
+
+IL_002c:
+	{
+		il2cpp_codegen_runtime_class_init_inline(MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var);
+		ObjectHandle_tB51DDB8EF3C73703B266D95396BFCD2A68A84793* L_4 = ((MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_StaticFields*)il2cpp_codegen_static_fields_for(MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var))->___DummyHandle_17;
+		Func_5_t214E734353760014C852360B18336EB86E55726E* L_5 = (Func_5_t214E734353760014C852360B18336EB86E55726E*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 5));
+		NullCheck(L_5);
+		((  void (*) (Func_5_t214E734353760014C852360B18336EB86E55726E*, RuntimeObject*, intptr_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 6)))(L_5, (RuntimeObject*)L_4, (intptr_t)((void*)il2cpp_rgctx_method(method->rgctx_data, 4)), il2cpp_rgctx_method(method->rgctx_data, 6));
+		MethodInfo_t* L_6;
+		L_6 = ((  MethodInfo_t* (*) (Func_5_t214E734353760014C852360B18336EB86E55726E*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 7)))(L_5, il2cpp_rgctx_method(method->rgctx_data, 7));
+		V_0 = L_6;
+		goto IL_0072;
+	}
+
+IL_0044:
+	{
+		il2cpp_codegen_runtime_class_init_inline(MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var);
+		ObjectHandle_tB51DDB8EF3C73703B266D95396BFCD2A68A84793* L_7 = ((MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_StaticFields*)il2cpp_codegen_static_fields_for(MetaRealmObject_t0A561411F1679B319FCE27E4B1DF36BDC67EA3D1_il2cpp_TypeInfo_var))->___DummyHandle_17;
+		Func_5_tF3D953E7C8F61CD253A236F267F00CD23F183F7C* L_8 = (Func_5_tF3D953E7C8F61CD253A236F267F00CD23F183F7C*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 9));
+		NullCheck(L_8);
+		((  void (*) (Func_5_tF3D953E7C8F61CD253A236F267F00CD23F183F7C*, RuntimeObject*, intptr_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 10)))(L_8, (RuntimeObject*)L_7, (intptr_t)((void*)il2cpp_rgctx_method(method->rgctx_data, 8)), il2cpp_rgctx_method(method->rgctx_data, 10));
+		MethodInfo_t* L_9;
+		L_9 = ((  MethodInfo_t* (*) (Func_5_tF3D953E7C8F61CD253A236F267F00CD23F183F7C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 11)))(L_8, il2cpp_rgctx_method(method->rgctx_data, 11));
+		V_0 = L_9;
+		goto IL_0072;
+	}
+
+IL_005c:
+	{
+		int32_t L_10 = ___collectionType0;
+		int32_t L_11 = L_10;
+		RuntimeObject* L_12 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CollectionType_tCA295DCEB91350BE48FDAD5EAFB87EF08A01B774_il2cpp_TypeInfo_var)), &L_11);
+		String_t* L_13;
+		L_13 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral2FB4D8068DB89A563A3B021E5835C02C4EACF4A7)), L_12, NULL);
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_14 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_14);
+		NotSupportedException__ctor_mE174750CF0247BBB47544FFD71D66BB89630945B(L_14, L_13, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_14, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MetaRealmObject_U3CGetObjectGetCollectionMethodU3Eg__GetCollectionGetterU7C22_0_TisRuntimeObject_mE3F027791BAF6E15A7B9824C631AB3C293AEEE9C_RuntimeMethod_var)));
+	}
+
+IL_0072:
+	{
+		MethodInfo_t* L_15 = V_0;
+		return L_15;
+	}
+}
+// System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::GetGetMethod<System.Object>(System.Func`3<System.String,Realms.Metadata,TResult>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_GetGetMethod_TisRuntimeObject_mE665913BDF96649A55B27033F6C9C0D05557F164_gshared (Func_3_tE7742BF7958D01B6649716E6978A1D4E6DA23400* ___delegate0, const RuntimeMethod* method) 
+{
+	{
+		Func_3_tE7742BF7958D01B6649716E6978A1D4E6DA23400* L_0 = ___delegate0;
+		MethodInfo_t* L_1;
+		L_1 = RuntimeReflectionExtensions_GetMethodInfo_mCC5A270DD1E9164C1BA414F6E1C583E08246224C((Delegate_t*)L_0, NULL);
+		return L_1;
+	}
+}
+// System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::GetGetMethod<System.Object>(System.Func`4<System.String,Realms.Metadata,Realms.Realm,TResult>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_GetGetMethod_TisRuntimeObject_m84E9331F17A94ADD8FC9AFF29BB7EB598694298C_gshared (Func_4_t531539144631BC4FFD0F6FC61DBB8E347E23AE0C* ___delegate0, const RuntimeMethod* method) 
+{
+	{
+		Func_4_t531539144631BC4FFD0F6FC61DBB8E347E23AE0C* L_0 = ___delegate0;
+		MethodInfo_t* L_1;
+		L_1 = RuntimeReflectionExtensions_GetMethodInfo_mCC5A270DD1E9164C1BA414F6E1C583E08246224C((Delegate_t*)L_0, NULL);
+		return L_1;
+	}
+}
+// System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::GetGetMethod<System.Object>(System.Func`5<Realms.Realm,System.String,Realms.Metadata,System.String,TResult>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_GetGetMethod_TisRuntimeObject_mD18753949076600E0E8304B3C49D63B4B6355290_gshared (Func_5_tAAF797D039D7F67FE8D6153CB81FD86414B84B15* ___delegate0, const RuntimeMethod* method) 
+{
+	{
+		Func_5_tAAF797D039D7F67FE8D6153CB81FD86414B84B15* L_0 = ___delegate0;
+		MethodInfo_t* L_1;
+		L_1 = RuntimeReflectionExtensions_GetMethodInfo_mCC5A270DD1E9164C1BA414F6E1C583E08246224C((Delegate_t*)L_0, NULL);
+		return L_1;
+	}
+}
+// System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::GetGetMethod<Realms.RealmValue>(System.Func`4<System.String,Realms.Metadata,Realms.Realm,TResult>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_GetGetMethod_TisRealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3_m9758642FA65639FC7819FEAA1971BF3DD353A5EB_gshared (Func_4_t9B149B580161402F390952EE4C4750DE3D48E745* ___delegate0, const RuntimeMethod* method) 
+{
+	{
+		Func_4_t9B149B580161402F390952EE4C4750DE3D48E745* L_0 = ___delegate0;
+		MethodInfo_t* L_1;
+		L_1 = RuntimeReflectionExtensions_GetMethodInfo_mCC5A270DD1E9164C1BA414F6E1C583E08246224C((Delegate_t*)L_0, NULL);
+		return L_1;
+	}
+}
+// System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::GetSetMethod<System.Object>(Realms.Dynamic.MetaRealmObject/SetUniqueDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_GetSetMethod_TisRuntimeObject_m151AB03A34424ACE0C6F4E6ED7758A28376097D0_gshared (SetUniqueDelegate_t864F7DAC8268F521AAA4E6670F098C808EA64A3D* ___delegate0, const RuntimeMethod* method) 
+{
+	{
+		SetUniqueDelegate_t864F7DAC8268F521AAA4E6670F098C808EA64A3D* L_0 = ___delegate0;
+		MethodInfo_t* L_1;
+		L_1 = RuntimeReflectionExtensions_GetMethodInfo_mCC5A270DD1E9164C1BA414F6E1C583E08246224C((Delegate_t*)L_0, NULL);
+		return L_1;
+	}
+}
 // System.Reflection.MethodInfo Realms.Dynamic.MetaRealmObject::GetSetMethod<System.Object>(Realms.Dynamic.MetaRealmObject/SetValueDelegate)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MethodInfo_t* MetaRealmObject_GetSetMethod_TisRuntimeObject_m32B4BCFA0F35F9B80AE7ECA4F6CEE4891C413873_gshared (SetValueDelegate_tDB01B4FA0C304235D69E09C54CAF7C57C128AE27* ___delegate0, const RuntimeMethod* method) 
 {
@@ -28429,96 +28626,6 @@ IL_0069:
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 5));
 		int64_t L_23;
 		L_23 = ((  int64_t (*) (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 4)))(L_22, il2cpp_rgctx_method(method->rgctx_data, 4));
-		return L_23;
-	}
-}
-// TResult Realms.Helpers.Operator::Convert<System.DateTimeOffset,System.Object>(TFrom)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Operator_Convert_TisDateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_TisRuntimeObject_m6BE91330818AFBE63655186570D43C469CBF66E9_gshared (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 ___value0, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Operator_tBDCE1D2267D2A19781266BC2C67B483F40F0DADA_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3_0_0_0_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	RuntimeObject* V_0 = NULL;
-	RuntimeObject* V_1 = NULL;
-	{
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_0 = ___value0;
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_1 = L_0;
-		RuntimeObject* L_2 = Box(il2cpp_rgctx_data(method->rgctx_data, 0), &L_1);
-		if (!((RuntimeObject*)IsInst((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1))))
-		{
-			goto IL_0020;
-		}
-	}
-	{
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_3 = ___value0;
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_4 = L_3;
-		RuntimeObject* L_5 = Box(il2cpp_rgctx_data(method->rgctx_data, 0), &L_4);
-		V_0 = ((RuntimeObject*)Castclass((RuntimeObject*)((RuntimeObject*)IsInst((RuntimeObject*)L_5, il2cpp_rgctx_data(method->rgctx_data, 1))), il2cpp_rgctx_data(method->rgctx_data, 1)));
-		RuntimeObject* L_6 = V_0;
-		return L_6;
-	}
-
-IL_0020:
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_7 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 2)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_8;
-		L_8 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_7, NULL);
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_9 = { reinterpret_cast<intptr_t> (RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3_0_0_0_var) };
-		Type_t* L_10;
-		L_10 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_9, NULL);
-		bool L_11;
-		L_11 = Type_op_Equality_m99930A0E44E420A685FABA60E60BA1CC5FA0EBDC(L_8, L_10, NULL);
-		if (!L_11)
-		{
-			goto IL_0069;
-		}
-	}
-	{
-		goto IL_004e;
-	}
-	{
-		RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3 L_13;
-		L_13 = RealmValue_get_Null_mF1558CD541617C7740E2A03B4E683A42401A4C17(NULL);
-		il2cpp_codegen_runtime_class_init_inline(Operator_tBDCE1D2267D2A19781266BC2C67B483F40F0DADA_il2cpp_TypeInfo_var);
-		RuntimeObject* L_14;
-		L_14 = ((  RuntimeObject* (*) (RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))(L_13, il2cpp_rgctx_method(method->rgctx_data, 3));
-		return L_14;
-	}
-
-IL_004e:
-	{
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_15 = ___value0;
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_16 = L_15;
-		RuntimeObject* L_17 = Box(il2cpp_rgctx_data(method->rgctx_data, 0), &L_16);
-		V_1 = (RuntimeObject*)NULL;
-		RuntimeObject* L_18 = V_1;
-		if (!L_18)
-		{
-			goto IL_0069;
-		}
-	}
-	{
-		RuntimeObject* L_19 = V_1;
-		RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3 L_20;
-		L_20 = RealmValue_Object_mA1E670BECDF1DAA6BCC67C803D5A76C492D58602(L_19, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Operator_tBDCE1D2267D2A19781266BC2C67B483F40F0DADA_il2cpp_TypeInfo_var);
-		RuntimeObject* L_21;
-		L_21 = ((  RuntimeObject* (*) (RealmValue_tA7D5AB9D345C4DFA7391F9DFBEB40F6A64D688F3, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 3)))(L_20, il2cpp_rgctx_method(method->rgctx_data, 3));
-		return L_21;
-	}
-
-IL_0069:
-	{
-		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_22 = ___value0;
-		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 5));
-		RuntimeObject* L_23;
-		L_23 = ((  RuntimeObject* (*) (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 4)))(L_22, il2cpp_rgctx_method(method->rgctx_data, 4));
 		return L_23;
 	}
 }

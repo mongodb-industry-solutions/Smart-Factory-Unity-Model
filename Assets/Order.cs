@@ -20,13 +20,25 @@ public class Order : MonoBehaviour
     public  Animator myWhiteAnimator;
     public  Animator myRedAnimator;
     public  Animator myBlueAnimator;
+    private Coroutine queryCoroutine;
 
-     
+    public float moveSpeed = 0.3f;
+    public double Temperature = 22.3;
+    public double Pressure = 1020;
+    public double Humidity = 31.7;
+    public double AirQuality = 188;
+    public string RoomBrigthness = "84.3";
+
+
 
     // Start is called before the first frame update
-    void Start()
+    private async void Start()
     {
+        // syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
+        // var syncConfiguration = new PartitionSyncConfiguration("DTPartition", syncUser);
+        // realm = await Realm.GetInstanceAsync(syncConfiguration);
 
+        // queryCoroutine = StartCoroutine(GetSensorDataCoroutine());
     }
 
     // Update is called once per frame
@@ -35,11 +47,45 @@ public class Order : MonoBehaviour
 
     }
 
+
+//     private IEnumerator GetSensorDataCoroutine()
+//     {
+//         while (true)
+//         {
+//             var sensor_doc = realm.All<sensors>().OrderByDescending(item => item.Ts).FirstOrDefault();
+            
+//             if(sensor_doc.Topic=="i/bme680")
+//             {
+//                 Temperature = sensor_doc.T ?? 22;;
+//                 Pressure = sensor_doc.P ?? 1080;;
+//                 Humidity = sensor_doc.H ?? 30;;
+//                 AirQuality = sensor_doc.Iaq ?? 150;;
+//             }
+//             else if(sensor_doc.Topic=="i/ldr"){
+//                 RoomBrigthness = sensor_doc.Br;
+//             }
+//             // Debug.Log(newMessage);
+//             SensorText.text = $@"Temperature [°C]:    {Temperature}
+// Room Brightness [%]:  {RoomBrigthness}
+// Air Pressure [hPa]:   {Pressure}
+// Humidity [%]:         {Humidity}
+// Air Quality Index [0-500]:    {AirQuality}";
+//             yield return new WaitForSeconds(3f);        
+//         }
+
+//             Debug.Log("Running function every 3 seconds");
+
+//             // Wait for 3 seconds
+            
+//         }
+
+
     public  GameObject BlueButton;
     public  GameObject RedButton;
     public  GameObject WhiteButton;
     public  GameObject StockAlert;
     public  TextMeshProUGUI StockAlertText;
+    public  TextMeshProUGUI SensorText;
 
 
 
@@ -251,7 +297,32 @@ public class Order : MonoBehaviour
     }
 }
 
-    public void  SetMovementListener(Realm realm)
+    // private void UpdateSensorData(int[] insertedIndices, Realm realm)
+    // {
+    // Debug.Log(insertedIndices.Length);
+    // foreach (var i in insertedIndices)
+    //     {
+    //     var newMessage = realm.All<sensors>().ElementAt(i);
+    //     if(newMessage.Topic=="i/bme680"){
+    //         Temperature = newMessage.T ?? 22;;
+    //         Pressure = newMessage.P ?? 1080;;
+    //         Humidity = newMessage.H ?? 30;;
+    //         AirQuality = newMessage.Iaq ?? 150;;
+    //     }
+    //     else if(newMessage.Topic=="i/ldr"){
+    //         RoomBrigthness = newMessage.Br;
+    //     }
+    //     // Debug.Log(newMessage);
+    //     SensorText.text = $@"Temperature [°C]: {Temperature}
+    //                         Room Brightness [%]: {RoomBrigthness}
+    //                         Air Pressure [hPa]: {Pressure}
+    //                         Humidity [%]: {Humidity}
+    //                         Air Quality Index [0-500]: {AirQuality}";
+
+    //     }
+    // }
+
+    public void SetMovementListener(Realm realm)
     {
       Debug.Log("Set movement listener");
       listenerToken = realm.All<mqtt>()
@@ -270,7 +341,31 @@ public class Order : MonoBehaviour
             }
 
         });
-        }
+    }
+
+    // public void  SetSensorListener(Realm realm)
+    // {
+    //   Debug.Log("Set Sensor listener");
+    //   listenerToken = realm.All<sensors>()
+    //     .SubscribeForNotifications((sender, changes, error) =>
+    //     {
+    //         if (error != null)
+    //         {
+    //             Debug.Log("an error occurred while listening for messages :" + error);
+    //             return;
+    //         }
+
+    //         if (changes != null)
+    //         {
+    //             Debug.Log("There's new Sensor data");
+    //             UpdateSensorData(changes.InsertedIndices,realm);
+                
+    //         }
+
+    //     });
+    // }
+
+
 
 
 }

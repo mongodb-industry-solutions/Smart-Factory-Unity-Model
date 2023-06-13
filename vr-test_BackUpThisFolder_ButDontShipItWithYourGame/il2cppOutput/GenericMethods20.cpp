@@ -321,6 +321,8 @@ struct sagemaker_stock_inferenceUnmanagedAccessor_t8C2E21DCD8B43DC93287FF93C9D16
 struct sagemaker_stock_inference_is_present_t34D91FA28A6EE055398F3B289BDBF90F489D01F0;
 // Global.Generated.sagemaker_stock_inference_is_presentUnmanagedAccessor
 struct sagemaker_stock_inference_is_presentUnmanagedAccessor_t81D815F0B9F4EEE1D39FF2EA1D1B8E2521CD8D46;
+// Global.Generated.sensorsUnmanagedAccessor
+struct sensorsUnmanagedAccessor_t25FEC50C99D9AC4B88C65C69E723627D6CF4973E;
 // UnityEngine.InputSystem.InputActionRebindingExtensions/RebindingOperation
 struct RebindingOperation_tF7D9BCBB6E69668FA3A5C211104FF8637F9F3470;
 // UnityEngine.InputSystem.InputActionState/ActionMapIndices
@@ -414,6 +416,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* sagemaker_stock_inferenceUnmanagedAccessor_
 IL2CPP_EXTERN_C const RuntimeMethod* sagemaker_stock_inference_is_presentUnmanagedAccessor_GetDictionaryValue_TisRuntimeObject_m8157EDE29BA631DEC41E5C143562E3B842F89BEB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* sagemaker_stock_inference_is_presentUnmanagedAccessor_GetListValue_TisRuntimeObject_m489EE9008D3A555695CE61E0DF828BF99929FE3B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* sagemaker_stock_inference_is_presentUnmanagedAccessor_GetSetValue_TisRuntimeObject_mB30D435808DAEACF0A082A6314B192BD82BC967B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* sensorsUnmanagedAccessor_GetDictionaryValue_TisRuntimeObject_m099139CCC70A3F2778897D3CDAC73B4696F26CF2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* sensorsUnmanagedAccessor_GetListValue_TisRuntimeObject_mA7B25901576CF90AC84F71CEBD4B22B1C3F56B63_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* sensorsUnmanagedAccessor_GetSetValue_TisRuntimeObject_m62BD3A16D714D3B6F95E2770FBEE0CA21E2FA273_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_0_0_0_var;
@@ -2879,6 +2884,39 @@ struct sagemaker_stock_inferenceUnmanagedAccessor_t8C2E21DCD8B43DC93287FF93C9D16
 	sagemaker_stock_inference_is_present_t34D91FA28A6EE055398F3B289BDBF90F489D01F0* ____isPresent_4;
 	// System.Nullable`1<System.DateTimeOffset> Global.Generated.sagemaker_stock_inferenceUnmanagedAccessor::_ts
 	Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B ____ts_5;
+};
+
+// Global.Generated.sensorsUnmanagedAccessor
+struct sensorsUnmanagedAccessor_t25FEC50C99D9AC4B88C65C69E723627D6CF4973E  : public UnmanagedAccessor_tA5773A089A2AE403648CD454D10B594EF8AA1A43
+{
+	// System.Nullable`1<MongoDB.Bson.ObjectId> Global.Generated.sensorsUnmanagedAccessor::_id
+	Nullable_1_t4E59E56223FFBB61475F9606D1095A4DF1FA27C5 ____id_2;
+	// System.String Global.Generated.sensorsUnmanagedAccessor::_partition
+	String_t* ____partition_3;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_aq
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____aq_4;
+	// System.String Global.Generated.sensorsUnmanagedAccessor::_br
+	String_t* ____br_5;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_gr
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____gr_6;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_h
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____h_7;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_iaq
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____iaq_8;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_ldr
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____ldr_9;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_p
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____p_10;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_rh
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____rh_11;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_rt
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____rt_12;
+	// System.Nullable`1<System.Double> Global.Generated.sensorsUnmanagedAccessor::_t
+	Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 ____t_13;
+	// System.String Global.Generated.sensorsUnmanagedAccessor::_topic
+	String_t* ____topic_14;
+	// System.Nullable`1<System.DateTimeOffset> Global.Generated.sensorsUnmanagedAccessor::_ts
+	Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B ____ts_15;
 };
 
 // UnityEngine.InputSystem.InputActionState/GlobalState
@@ -8737,6 +8775,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* sagemaker_stock_inference_is_p
 		NullCheck(L_2);
 		MissingMemberException__ctor_m6292C676754200C455A390D36BFEBD8F8775628C(L_2, L_1, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&sagemaker_stock_inference_is_presentUnmanagedAccessor_GetSetValue_TisRuntimeObject_mB30D435808DAEACF0A082A6314B192BD82BC967B_RuntimeMethod_var)));
+	}
+}
+// System.Collections.Generic.IDictionary`2<System.String,TValue> Global.Generated.sensorsUnmanagedAccessor::GetDictionaryValue<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* sensorsUnmanagedAccessor_GetDictionaryValue_TisRuntimeObject_m099139CCC70A3F2778897D3CDAC73B4696F26CF2_gshared (sensorsUnmanagedAccessor_t25FEC50C99D9AC4B88C65C69E723627D6CF4973E* __this, String_t* ___propertyName0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___propertyName0;
+		String_t* L_1;
+		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAA095C556A586EC4C257C451DAAAC7FBC00F858C)), L_0, NULL);
+		MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211* L_2 = (MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		MissingMemberException__ctor_m6292C676754200C455A390D36BFEBD8F8775628C(L_2, L_1, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&sensorsUnmanagedAccessor_GetDictionaryValue_TisRuntimeObject_m099139CCC70A3F2778897D3CDAC73B4696F26CF2_RuntimeMethod_var)));
+	}
+}
+// System.Collections.Generic.IList`1<T> Global.Generated.sensorsUnmanagedAccessor::GetListValue<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* sensorsUnmanagedAccessor_GetListValue_TisRuntimeObject_mA7B25901576CF90AC84F71CEBD4B22B1C3F56B63_gshared (sensorsUnmanagedAccessor_t25FEC50C99D9AC4B88C65C69E723627D6CF4973E* __this, String_t* ___propertyName0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___propertyName0;
+		String_t* L_1;
+		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA19F797A7C157F71BB33FBF16DCFFA43E2A52336)), L_0, NULL);
+		MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211* L_2 = (MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		MissingMemberException__ctor_m6292C676754200C455A390D36BFEBD8F8775628C(L_2, L_1, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&sensorsUnmanagedAccessor_GetListValue_TisRuntimeObject_mA7B25901576CF90AC84F71CEBD4B22B1C3F56B63_RuntimeMethod_var)));
+	}
+}
+// System.Collections.Generic.ISet`1<T> Global.Generated.sensorsUnmanagedAccessor::GetSetValue<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* sensorsUnmanagedAccessor_GetSetValue_TisRuntimeObject_m62BD3A16D714D3B6F95E2770FBEE0CA21E2FA273_gshared (sensorsUnmanagedAccessor_t25FEC50C99D9AC4B88C65C69E723627D6CF4973E* __this, String_t* ___propertyName0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___propertyName0;
+		String_t* L_1;
+		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9A5B43C5A69475388F9F0714E13A82EACE1901B9)), L_0, NULL);
+		MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211* L_2 = (MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MissingMemberException_tB9D7B25FF06EEBB52D036DA8B1BE67F67619D211_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		MissingMemberException__ctor_m6292C676754200C455A390D36BFEBD8F8775628C(L_2, L_1, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&sensorsUnmanagedAccessor_GetSetValue_TisRuntimeObject_m62BD3A16D714D3B6F95E2770FBEE0CA21E2FA273_RuntimeMethod_var)));
 	}
 }
 // TValue UnityEngine.InputSystem.InputAction/CallbackContext::ReadValue<UnityEngine.Quaternion>()
