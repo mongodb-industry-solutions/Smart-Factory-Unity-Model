@@ -422,6 +422,40 @@ public partial class sagemaker_stock_inference_is_present : IEmbeddedObject
     public bool? White { get; set; }
 }
 
+public partial class sensors : IRealmObject
+{
+    [MapTo("_id")]
+    [PrimaryKey]
+    public ObjectId? Id { get; set; }
+    [MapTo("_partition")]
+    [Required]
+    public string Partition { get; set; }
+    [MapTo("aq")]
+    public double? Aq { get; set; }
+    [MapTo("br")]
+    public string? Br { get; set; }
+    [MapTo("gr")]
+    public double? Gr { get; set; }
+    [MapTo("h")]
+    public double? H { get; set; }
+    [MapTo("iaq")]
+    public double? Iaq { get; set; }
+    [MapTo("ldr")]
+    public double? Ldr { get; set; }
+    [MapTo("p")]
+    public double? P { get; set; }
+    [MapTo("rh")]
+    public double? Rh { get; set; }
+    [MapTo("rt")]
+    public double? Rt { get; set; }
+    [MapTo("t")]
+    public double? T { get; set; }
+    [MapTo("topic")]
+    public string? Topic { get; set; }
+    [MapTo("ts")]
+    public DateTimeOffset? Ts { get; set; }
+}
+
 
 
 // public class sagemaker_stock_inference_is_present : EmbeddedObject
