@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using Realms;
 using Realms.Sync;
 using MongoDB.Bson;
@@ -30,15 +31,10 @@ public class Order : MonoBehaviour
     public string RoomBrigthness = "84.3";
 
 
-
     // Start is called before the first frame update
     private async void Start()
     {
-        // syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
-        // var syncConfiguration = new PartitionSyncConfiguration("DTPartition", syncUser);
-        // realm = await Realm.GetInstanceAsync(syncConfiguration);
 
-        // queryCoroutine = StartCoroutine(GetSensorDataCoroutine());
     }
 
     // Update is called once per frame
@@ -47,37 +43,6 @@ public class Order : MonoBehaviour
 
     }
 
-
-//     private IEnumerator GetSensorDataCoroutine()
-//     {
-//         while (true)
-//         {
-//             var sensor_doc = realm.All<sensors>().OrderByDescending(item => item.Ts).FirstOrDefault();
-            
-//             if(sensor_doc.Topic=="i/bme680")
-//             {
-//                 Temperature = sensor_doc.T ?? 22;;
-//                 Pressure = sensor_doc.P ?? 1080;;
-//                 Humidity = sensor_doc.H ?? 30;;
-//                 AirQuality = sensor_doc.Iaq ?? 150;;
-//             }
-//             else if(sensor_doc.Topic=="i/ldr"){
-//                 RoomBrigthness = sensor_doc.Br;
-//             }
-//             // Debug.Log(newMessage);
-//             SensorText.text = $@"Temperature [°C]:    {Temperature}
-// Room Brightness [%]:  {RoomBrigthness}
-// Air Pressure [hPa]:   {Pressure}
-// Humidity [%]:         {Humidity}
-// Air Quality Index [0-500]:    {AirQuality}";
-//             yield return new WaitForSeconds(3f);        
-//         }
-
-//             Debug.Log("Running function every 3 seconds");
-
-//             // Wait for 3 seconds
-            
-//         }
 
 
     public  GameObject BlueButton;
@@ -104,6 +69,7 @@ public class Order : MonoBehaviour
                     Debug.Log("The Physical factory doesn't have a Blue piece in Stock!");
                     StockAlertText.text = "The blue piece you are requesting is out of stock in the Physical Factory!";
                     StockAlert.SetActive(true);
+                    GetComponent<Button>().interactable = true;
                     
                     
                 } 
@@ -128,7 +94,7 @@ public class Order : MonoBehaviour
                     });
 
                     SetMovementListener(realm);
-                    myBlueAnimator.SetTrigger("start_blue");
+                    // myBlueAnimator.SetTrigger("start_blue");
                     Debug.Log("start blue animation");
                     
                 }
@@ -153,6 +119,7 @@ public class Order : MonoBehaviour
                     Debug.Log("The Physical factory doesn't have a Red piece in Stock!");
                     StockAlertText.text = "The red piece you are requesting is out of stock in the Physical Factory!";
                     StockAlert.SetActive(true);
+                    GetComponent<Button>().interactable = true;
                     
                     
                 } 
@@ -177,7 +144,7 @@ public class Order : MonoBehaviour
                     });
 
                     SetMovementListener(realm);
-                    myRedAnimator.SetTrigger("start_red");
+                    // myRedAnimator.SetTrigger("start_red");
                     Debug.Log("start red animation");
                 }
 
@@ -206,6 +173,7 @@ public class Order : MonoBehaviour
                     Debug.Log("The Physical factory doesn't have a White piece in Stock!");
                     StockAlertText.text = "The white piece you are requesting is out of stock in the Physical Factory!";
                     StockAlert.SetActive(true);
+                    GetComponent<Button>().interactable = true;
                     
                     
                 } 
@@ -231,7 +199,7 @@ public class Order : MonoBehaviour
                     });
 
                     SetMovementListener(realm);
-                    myWhiteAnimator.SetTrigger("start_white");
+                    // myWhiteAnimator.SetTrigger("start_white");
                     Debug.Log("start white animation");
                 }
 
@@ -276,7 +244,7 @@ public class Order : MonoBehaviour
     foreach (var i in insertedIndices)
     {
         var newMessage = realm.All<mqtt>().ElementAt(i);
-        Debug.Log(newMessage.Topic);
+        // Debug.Log(newMessage.Topic);
 
         if(newMessage.State=="ORDERED" && newMessage.Type=="WHITE" && newMessage.Topic=="f/i/order"){
             myWhiteAnimator.SetTrigger("start_white");
