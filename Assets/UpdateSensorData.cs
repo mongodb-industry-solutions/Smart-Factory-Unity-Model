@@ -26,6 +26,7 @@ public class UpdateSensorData : MonoBehaviour
 
     private async void Start()
     {
+        Debug.Log("Stat script running");
         // Authenticate the user
         realmApp = App.Create(Constants.Realm.AppId);
         syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
@@ -40,8 +41,6 @@ public class UpdateSensorData : MonoBehaviour
         // Subscribe to collection changes
         documents.SubscribeForNotifications(OnCollectionChanged);
 
-        // // Start the coroutine to query the collection
-        // queryCoroutine = StartCoroutine(QueryCollectionCoroutine());
     }
 
     private void OnCollectionChanged(IRealmCollection<sensors> collection, ChangeSet changes, Exception error)
@@ -81,11 +80,11 @@ Air Quality Index [0-500]: {AirQuality}";
         }
     }
 
-    private void OnDestroy()
-    {
-        // Clean up resources
-        realm?.Dispose();
-    }
+    // private void OnDestroy()
+    // {
+    //     // Clean up resources
+    //     realm?.Dispose();
+    // }
 
 //     private System.Collections.IEnumerator QueryCollectionCoroutine()
 //     {
