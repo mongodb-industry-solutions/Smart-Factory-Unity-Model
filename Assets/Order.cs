@@ -29,18 +29,20 @@ public class Order : MonoBehaviour
     public double Humidity = 31.7;
     public double AirQuality = 188;
     public string RoomBrigthness = "84.3";
-
+     
 
     // Start is called before the first frame update
     private async void Start()
     {
-
+        syncUser = await realmApp.LogInAsync(Credentials.EmailPassword(Constants.Realm.UserName, Constants.Realm.Password));
+        realm = await GetRealm(syncUser);
+        SetMovementListener(realm);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        // SetMovementListener(realm);
     }
 
 
@@ -93,8 +95,8 @@ public class Order : MonoBehaviour
                         });
                     });
 
-                    SetMovementListener(realm);
-                    // myBlueAnimator.SetTrigger("start_blue");
+                    // SetMovementListener(realm);
+                    myBlueAnimator.SetTrigger("start_blue");
                     Debug.Log("start blue animation");
                     
                 }
@@ -236,6 +238,11 @@ public class Order : MonoBehaviour
     }
 
 
+    private IEnumerator AnimationDelay(Animator myColorAnimator, string AnimatorName)
+    {
+        yield return new WaitForSeconds(10f);
+        myColorAnimator.SetTrigger(AnimatorName);
+    }
 
     private void StartAnimations(int[] insertedIndices, Realm realm)
 {
@@ -247,17 +254,20 @@ public class Order : MonoBehaviour
         // Debug.Log(newMessage.Topic);
 
         if(newMessage.State=="ORDERED" && newMessage.Type=="WHITE" && newMessage.Topic=="f/i/order"){
-            myWhiteAnimator.SetTrigger("start_white");
+            StartCoroutine(AnimationDelay(myWhiteAnimator, "start_white"));
+            // myWhiteAnimator.SetTrigger("start_white");
             Debug.Log("start white animation");
         }
 
         else if (newMessage.State=="ORDERED" && newMessage.Type=="RED" && newMessage.Topic=="f/i/order"){
-            myRedAnimator.SetTrigger("start_red");
+            StartCoroutine(AnimationDelay(myRedAnimator, "start_red"));
+            // myRedAnimator.SetTrigger("start_red");
             Debug.Log("start red animation");
         }
 
         else if (newMessage.State=="ORDERED" && newMessage.Type=="BLUE" && newMessage.Topic=="f/i/order"){
-            myBlueAnimator.SetTrigger("start_blue");
+            StartCoroutine(AnimationDelay(myBlueAnimator, "start_blue"));
+            // myBlueAnimator.SetTrigger("start_blue");
             Debug.Log("start blue animation");
         }
 
@@ -309,7 +319,7 @@ public class Order : MonoBehaviour
             }
 
         });
-    }
+        }
 
     // public void  SetSensorListener(Realm realm)
     // {

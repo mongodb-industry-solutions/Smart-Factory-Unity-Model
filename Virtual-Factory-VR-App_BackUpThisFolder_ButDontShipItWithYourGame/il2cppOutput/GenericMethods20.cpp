@@ -2871,6 +2871,8 @@ struct mqttUnmanagedAccessor_t6B818F4C3CD67ABE87A17C4CBA7222FC3765427D  : public
 	String_t* ____type_33;
 	// mqtt_workpiece Global.Generated.mqttUnmanagedAccessor::_workpiece
 	mqtt_workpiece_t98B92077BA96C21381FBCF1122EDFE00834075A0* ____workpiece_34;
+	// System.String Global.Generated.mqttUnmanagedAccessor::_source
+	String_t* ____source_35;
 };
 
 // Global.Generated.sagemaker_stock_inferenceUnmanagedAccessor
