@@ -152,10 +152,6 @@ struct BasicNode_1_t7B4D545DCD6949B2E1C85D63DF038E44602F7DDB;
 struct BsonClassMap_1_t046ECA7D6F5B1FD6B62E91CF7C005996E2AA0CF5;
 // MongoDB.Bson.IO.BsonTrie`1<System.Int32>
 struct BsonTrie_1_tD7DF5864405B0A2117DC1B93D6D2A21D79F8D8D7;
-// System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,MongoDB.Bson.Serialization.IBsonSerializer>
-struct ConcurrentDictionary_2_t618C9479BFB823A3B0773F4599025DEBF5487282;
-// System.Collections.Concurrent.ConcurrentStack`1<MongoDB.Bson.Serialization.IBsonSerializationProvider>
-struct ConcurrentStack_1_t5919E36A2035D8C7E5E22BFE2A5CA1544EECA6A1;
 // System.Collections.Generic.Dictionary`2<MongoDB.Bson.BsonType,System.Int32>
 struct Dictionary_2_t838F4194238172BB3FE191F4CB1E70D37ED521FF;
 // System.Collections.Generic.Dictionary`2<MongoDB.Bson.BsonValue,System.Collections.Generic.HashSet`1<System.Type>>
@@ -212,14 +208,6 @@ struct HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2;
 struct HashSet_1_tB6500BDDDCB8DF19C4C8045C5D0C7C4C2FEE44ED;
 // System.Collections.Generic.HashSet`1<System.Type>
 struct HashSet_1_tAE2F12E55878645F5BE7C4D5603228A6FAB429C7;
-// MongoDB.Bson.Serialization.IBsonSerializer`1<System.Boolean>
-struct IBsonSerializer_1_tC1912AA4C0A1CC5F46603505CD9E83670E7F4232;
-// MongoDB.Bson.Serialization.IBsonSerializer`1<System.Byte>
-struct IBsonSerializer_1_tEA8FAD3EEFAD9070BF35FA2E75833B39E813DAE5;
-// MongoDB.Bson.Serialization.IBsonSerializer`1<System.Char>
-struct IBsonSerializer_1_t09B38D5DDBBEEC1D9E1A08735DD3694160CDA5CF;
-// MongoDB.Bson.Serialization.IBsonSerializer`1<System.DateTime>
-struct IBsonSerializer_1_t5DAC8BFC0E5C85D3B6C1A7B2E91C92340EC38BC2;
 // MongoDB.Bson.Serialization.IBsonSerializer`1<System.DateTimeOffset>
 struct IBsonSerializer_1_t60398FEB86DF9BEA376DD7A0002C0F0BF1A8F81D;
 // MongoDB.Bson.Serialization.IBsonSerializer`1<System.Decimal>
@@ -3232,15 +3220,6 @@ struct BsonSerializer_tEDF957B392116BC56929CE3257D44B9D4389C0BD_StaticFields
 	bool _____useNullIdChecker_8;
 	// System.Boolean MongoDB.Bson.Serialization.BsonSerializer::__useZeroIdChecker
 	bool _____useZeroIdChecker_9;
-};
-
-// MongoDB.Bson.Serialization.BsonSerializerRegistry
-struct BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED  : public RuntimeObject
-{
-	// System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,MongoDB.Bson.Serialization.IBsonSerializer> MongoDB.Bson.Serialization.BsonSerializerRegistry::_cache
-	ConcurrentDictionary_2_t618C9479BFB823A3B0773F4599025DEBF5487282* ____cache_0;
-	// System.Collections.Concurrent.ConcurrentStack`1<MongoDB.Bson.Serialization.IBsonSerializationProvider> MongoDB.Bson.Serialization.BsonSerializerRegistry::_serializationProviders
-	ConcurrentStack_1_t5919E36A2035D8C7E5E22BFE2A5CA1544EECA6A1* ____serializationProviders_1;
 };
 
 // MongoDB.Bson.BsonValue
@@ -9801,6 +9780,12 @@ struct U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD
 	int32_t ___U3CU3E1__state_0;
 	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder Order/<Start>d__14::<>t__builder
 	AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D ___U3CU3Et__builder_1;
+	// Order Order/<Start>d__14::<>4__this
+	Order_t383E22D7AFB774A8EE15F96D88EC48D15D0FDA5B* ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Realms.Sync.User> Order/<Start>d__14::<>u__1
+	TaskAwaiter_1_tCED222679C79DF1EAF8451BE28CD7D88D59DCD75 ___U3CU3Eu__1_3;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Realms.Realm> Order/<Start>d__14::<>u__2
+	TaskAwaiter_1_tFAEC2D9C1B0C2E717B8C3A454E5CD09E54D0498C ___U3CU3Eu__2_4;
 };
 
 // UnityEngine.InputSystem.UI.PointerModel/ButtonState
@@ -17166,6 +17151,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnComp
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3COnRedButtonClickU3Ed__23_t38BDAF8236339DA6510F662571F8BFA9C40CF6D7_mCABEA7AFDA6E121A2E73B0079571C80695012756_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3COnRedButtonClickU3Ed__23_t38BDAF8236339DA6510F662571F8BFA9C40CF6D7* ___stateMachine1, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Order/<OnWhiteButtonClick>d__24>(TAwaiter&,TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3COnWhiteButtonClickU3Ed__24_t17468C929D5A705AE13983CC1F4A2BA34125B081_m375404E581F78CB278C38560A9C745486C825648_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3COnWhiteButtonClickU3Ed__24_t17468C929D5A705AE13983CC1F4A2BA34125B081* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Order/<Start>d__14>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD_m20F3823050200DC32FF32731BFEB3C1B2AB791A0_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD* ___stateMachine1, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,UpdateSensorData/<Start>d__11>(TAwaiter&,TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__11_t41EF68BE7A45560237FB95745506CFA7F11D6AF9_m3B48C454CA1DC3FE688051CD34F974DE19BA22D8_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__11_t41EF68BE7A45560237FB95745506CFA7F11D6AF9* ___stateMachine1, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Object,System.Object>(TAwaiter&,TStateMachine&)
@@ -18041,6 +18028,11 @@ inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B80
 {
 	((  void (*) (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA*, U3COnWhiteButtonClickU3Ed__24_t17468C929D5A705AE13983CC1F4A2BA34125B081*, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3COnWhiteButtonClickU3Ed__24_t17468C929D5A705AE13983CC1F4A2BA34125B081_m375404E581F78CB278C38560A9C745486C825648_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Order/<Start>d__14>(TAwaiter&,TStateMachine&)
+inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD_m20F3823050200DC32FF32731BFEB3C1B2AB791A0 (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA*, U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD*, const RuntimeMethod*))AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD_m20F3823050200DC32FF32731BFEB3C1B2AB791A0_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,UpdateSensorData/<Start>d__11>(TAwaiter&,TStateMachine&)
 inline void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__11_t41EF68BE7A45560237FB95745506CFA7F11D6AF9_m3B48C454CA1DC3FE688051CD34F974DE19BA22D8 (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__11_t41EF68BE7A45560237FB95745506CFA7F11D6AF9* ___stateMachine1, const RuntimeMethod* method)
 {
@@ -18218,8 +18210,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonReader__ctor_m59D9BAE10689349472CAC4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonSerializer_RegisterSerializer_m3820F3187BE40BC7D2302B4BB4D40462B803CB7E (Type_t* ___type0, RuntimeObject* ___serializer1, const RuntimeMethod* method) ;
 // MongoDB.Bson.Serialization.BsonSerializationContext MongoDB.Bson.Serialization.BsonSerializationContext::CreateRoot(MongoDB.Bson.IO.IBsonWriter,System.Action`1<MongoDB.Bson.Serialization.BsonSerializationContext/Builder>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BsonSerializationContext_t4A495776915BCA242B8F24ADAFC366BDF4B9DDCD* BsonSerializationContext_CreateRoot_m9CE55DB9569551342ACF8C985892E9A6AA3E87B9 (RuntimeObject* ___writer0, Action_1_tFBAA328623C972FC73D893FC4971E5E5F5B5E7BB* ___configurator1, const RuntimeMethod* method) ;
-// MongoDB.Bson.Serialization.IBsonSerializer MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer(System.Type)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, Type_t* ___type0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Vector3::op_Equality(UnityEngine.Vector3,UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) ;
 // System.Void System.Array::Sort<System.Collections.Generic.KeyValuePair`2<System.Object,Realms.Schema.Property>>(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
@@ -44496,6 +44486,136 @@ IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwait
 	_thisAdjusted = reinterpret_cast<AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*>(__this + _offset);
 	AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3COnWhiteButtonClickU3Ed__24_t17468C929D5A705AE13983CC1F4A2BA34125B081_m375404E581F78CB278C38560A9C745486C825648(_thisAdjusted, ___awaiter0, ___stateMachine1, method);
 }
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Order/<Start>d__14>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD_m20F3823050200DC32FF32731BFEB3C1B2AB791A0_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD* ___stateMachine1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1865ADD0B2BD98A16ED26B59F57307FBCA54202A);
+		s_Il2CppMethodInitialized = true;
+	}
+	MoveNextRunner_t57DA5A6E2423AE86889DAA6D20097BBE3C75101E* V_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF* G_B2_0 = NULL;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF* G_B1_0 = NULL;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* G_B3_0 = NULL;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF* G_B3_1 = NULL;
+	try
+	{// begin try (depth: 1)
+		{
+			V_0 = (MoveNextRunner_t57DA5A6E2423AE86889DAA6D20097BBE3C75101E*)NULL;
+			AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF* L_0 = (AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF*)(&__this->___m_coreState_1);
+			bool L_1;
+			L_1 = AsyncCausalityTracer_get_LoggingOn_m7C26C0F4409E43D8FBC226A6413BBFAB3BF23EAF(NULL);
+			G_B1_0 = L_0;
+			if (L_1)
+			{
+				G_B2_0 = L_0;
+				goto IL_0012_1;
+			}
+		}
+		{
+			G_B3_0 = ((Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*)(NULL));
+			G_B3_1 = G_B1_0;
+			goto IL_0018_1;
+		}
+
+IL_0012_1:
+		{
+			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_2;
+			L_2 = AsyncVoidMethodBuilder_get_Task_m229538FE6AE7089FA46E87C5720256A0CC727B8F(__this, NULL);
+			G_B3_0 = L_2;
+			G_B3_1 = G_B2_0;
+		}
+
+IL_0018_1:
+		{
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3;
+			L_3 = AsyncMethodBuilderCore_GetCompletionAction_mC8FA54136A05CD45BA09560748F864AF93DDFDFD(G_B3_1, G_B3_0, (&V_0), NULL);
+			V_1 = L_3;
+			AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF* L_4 = (AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF*)(&__this->___m_coreState_1);
+			RuntimeObject* L_5 = (RuntimeObject*)L_4->___m_stateMachine_0;
+			if (L_5)
+			{
+				goto IL_007a_1;
+			}
+		}
+		{
+			bool L_6;
+			L_6 = AsyncCausalityTracer_get_LoggingOn_m7C26C0F4409E43D8FBC226A6413BBFAB3BF23EAF(NULL);
+			if (!L_6)
+			{
+				goto IL_0062_1;
+			}
+		}
+		{
+			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_7;
+			L_7 = AsyncVoidMethodBuilder_get_Task_m229538FE6AE7089FA46E87C5720256A0CC727B8F(__this, NULL);
+			NullCheck(L_7);
+			int32_t L_8;
+			L_8 = Task_get_Id_mE529E167E64F60B3B79B540D4DFA6254B94F47AA(L_7, NULL);
+			U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD* L_9 = ___stateMachine1;
+			Il2CppFakeBox<U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD> L_10(il2cpp_rgctx_data(method->rgctx_data, 0), L_9);
+			Type_t* L_11;
+			L_11 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3((&L_10), NULL);
+			NullCheck((MemberInfo_t*)L_11);
+			String_t* L_12;
+			L_12 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, (MemberInfo_t*)L_11);
+			String_t* L_13;
+			L_13 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral1865ADD0B2BD98A16ED26B59F57307FBCA54202A, L_12, NULL);
+			AsyncCausalityTracer_TraceOperationCreation_m3C51C98DC960894FD740429D1A9BBC209FB65A8F((int32_t)0, L_8, L_13, (uint64_t)((int64_t)0), NULL);
+		}
+
+IL_0062_1:
+		{
+			AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF* L_14 = (AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF*)(&__this->___m_coreState_1);
+			U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD* L_15 = ___stateMachine1;
+			U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD L_16 = (*(U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD*)L_15);
+			U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD L_17 = L_16;
+			RuntimeObject* L_18 = Box(il2cpp_rgctx_data(method->rgctx_data, 0), &L_17);
+			MoveNextRunner_t57DA5A6E2423AE86889DAA6D20097BBE3C75101E* L_19 = V_0;
+			AsyncMethodBuilderCore_PostBoxInitialization_mB531930E3F2FE5A9D31E4233429FAD0AFA6E8E9A(L_14, (RuntimeObject*)L_18, L_19, (Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*)NULL, NULL);
+		}
+
+IL_007a_1:
+		{
+			TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* L_20 = ___awaiter0;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_21 = V_1;
+			TaskAwaiter_1_UnsafeOnCompleted_m432BB796161116E663D0AEE2F77FD3B254442C0B(L_20, L_21, il2cpp_rgctx_method(method->rgctx_data, 3));
+			goto IL_0091;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0089;
+		}
+		throw e;
+	}
+
+CATCH_0089:
+	{// begin catch(System.Exception)
+		AsyncMethodBuilderCore_ThrowAsync_m07C1067BBFF7C572C5DCEBD96C7327D94DE67330(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)), (SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0*)NULL, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0091;
+	}// end catch (depth: 1)
+
+IL_0091:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD_m20F3823050200DC32FF32731BFEB3C1B2AB791A0_AdjustorThunk (RuntimeObject* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD* ___stateMachine1, const RuntimeMethod* method)
+{
+	AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*>(__this + _offset);
+	AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__14_t3C47B3330FA1E34A94525619201CC44FDFED01BD_m20F3823050200DC32FF32731BFEB3C1B2AB791A0(_thisAdjusted, ___awaiter0, ___stateMachine1, method);
+}
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,UpdateSensorData/<Start>d__11>(TAwaiter&,TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CStartU3Ed__11_t41EF68BE7A45560237FB95745506CFA7F11D6AF9_m3B48C454CA1DC3FE688051CD34F974DE19BA22D8_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CStartU3Ed__11_t41EF68BE7A45560237FB95745506CFA7F11D6AF9* ___stateMachine1, const RuntimeMethod* method) 
 {
@@ -47518,120 +47638,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BsonSerializer_Serialize_TisRuntimeObjec
 		NullCheck(L_2);
 		InterfaceActionInvoker3< BsonSerializationContext_t4A495776915BCA242B8F24ADAFC366BDF4B9DDCD*, BsonSerializationArgs_t01687F2BFE370E43533EF16C9E677F735DBE220C, RuntimeObject* >::Invoke(1 /* System.Void MongoDB.Bson.Serialization.IBsonSerializer`1<System.Object>::Serialize(MongoDB.Bson.Serialization.BsonSerializationContext,MongoDB.Bson.Serialization.BsonSerializationArgs,TValue) */, il2cpp_rgctx_data(method->rgctx_data, 2), L_2, L_6, L_7, L_8);
 		return;
-	}
-}
-// MongoDB.Bson.Serialization.IBsonSerializer`1<T> MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer<System.Boolean>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_mE0172A78CE056D6606897BF4976417BFB77DED72_gshared (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_1;
-		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
-		RuntimeObject* L_2;
-		L_2 = BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD(__this, L_1, NULL);
-		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1)));
-	}
-}
-// MongoDB.Bson.Serialization.IBsonSerializer`1<T> MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer<System.Byte>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m7D02434DCA7D9186DA9B26FC036BA5E69980F44C_gshared (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_1;
-		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
-		RuntimeObject* L_2;
-		L_2 = BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD(__this, L_1, NULL);
-		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1)));
-	}
-}
-// MongoDB.Bson.Serialization.IBsonSerializer`1<T> MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer<System.Char>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_TisChar_t521A6F19B456D956AF452D926C32709DC03D6B17_mC5D107F6740ED943339FDFCA5BF90060F3C1ACF7_gshared (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_1;
-		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
-		RuntimeObject* L_2;
-		L_2 = BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD(__this, L_1, NULL);
-		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1)));
-	}
-}
-// MongoDB.Bson.Serialization.IBsonSerializer`1<T> MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer<System.DateTime>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_TisDateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_m6FE7680AB1D457F7E4FD1DD36A79B30A5A4AC36F_gshared (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_1;
-		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
-		RuntimeObject* L_2;
-		L_2 = BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD(__this, L_1, NULL);
-		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1)));
-	}
-}
-// MongoDB.Bson.Serialization.IBsonSerializer`1<T> MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer<System.DateTimeOffset>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_TisDateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_mBB468CA65B0892B3FA96D720D12046FFD7CE8152_gshared (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_1;
-		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
-		RuntimeObject* L_2;
-		L_2 = BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD(__this, L_1, NULL);
-		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1)));
-	}
-}
-// MongoDB.Bson.Serialization.IBsonSerializer`1<T> MongoDB.Bson.Serialization.BsonSerializerRegistry::GetSerializer<System.Decimal>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BsonSerializerRegistry_GetSerializer_TisDecimal_tDA6C877282B2D789CF97C0949661CC11D643969F_m879726685EAF79D17D59D9E2E831F8B22AF801FA_gshared (BsonSerializerRegistry_tD9B4FBA77766731795D7D734F8C33EE5A6F788ED* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (il2cpp_rgctx_type(method->rgctx_data, 0)) };
-		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
-		Type_t* L_1;
-		L_1 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_0, NULL);
-		RuntimeObject* L_2;
-		L_2 = BsonSerializerRegistry_GetSerializer_mA5E25AAD5FB0E9AD966689AED6E158174E7D9BBD(__this, L_1, NULL);
-		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(method->rgctx_data, 1)));
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StreamedSequenceInfo_t96C25DD5337F04E0D61AE0DEB62F02280EB33378* StreamedSequence_get_DataInfo_mD796975440F367881014804A5A13FBC55AC5CB90_inline (StreamedSequence_tA844313208643A44D9B474CD25498B05AFE56E25* __this, const RuntimeMethod* method) 

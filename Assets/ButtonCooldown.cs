@@ -26,8 +26,8 @@ public class ButtonCooldown : MonoBehaviour
             // Disable the button to prevent immediate multiple presses
             GetComponent<Button>().interactable = false;
 
-            // Start the coroutine to enable the button after 10 seconds
-            StartCoroutine(EnableButtonAfterDelay(10f));
+            // Start the coroutine to enable the button after 120 seconds
+            StartCoroutine(EnableButtonAfterDelay(120f));
         }
     }
 }

@@ -199,6 +199,9 @@ public partial class mqtt : IRealmObject
 
     [MapTo("workpiece")]
     public mqtt_workpiece? Workpiece { get; set; }
+
+    [MapTo("source")]
+    public string? Source { get; set; }
 }
 
 
